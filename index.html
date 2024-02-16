@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- font awesome -->
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="CSS/Style.css" />
+    <title>images generator</title>
+  </head>
+  <body>
+    <main id="particles-js" class="py-5">
+      <div class="container d-flex align-items-center flex-column">
+        <h1 class="text-center text-white mb-4 pt-2">AI Images Generator</h1>
+        <input
+          type="text"
+          name=""
+          id="inp"
+          class="form-control w-50 index-top inp"
+          placeholder="Enter Images Description "
+        />
+        <button id="btn" class="btn mt-4 index-top" type="button">
+          <strong>Generate</strong>
+          <div id="container-stars">
+            <div id="stars"></div>
+          </div>
+
+          <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </button>
+
+        <div class="row w-100 mt-3 gy-3" id="imgsHolder">
+          <div class="col-md-4">
+            <div
+              class="loading d-flex justify-content-center align-items-center"
+            >
+              <span class="loader d-none"></span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="loading d-flex justify-content-center align-items-center"
+            >
+              <span class="loader d-none"></span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="loading d-flex justify-content-center align-items-center"
+            >
+              <span class="loader d-none"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/particles.min.js"></script>
+    <script src="JS/sweetalert2.all.min.js"></script>
+    <script type="Module" src="JS/main.js"></script>
+  </body>
+</html>
